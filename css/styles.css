@@ -44,6 +44,10 @@ p {
   margin: 1rem auto 5rem auto;
 }
 
+.card-headings {
+  color: hsl(234, 12%, 34%);
+}
+
 /* The card styling. It is used 4 times so I put it in a single class */
 .card {
   display: flex;
