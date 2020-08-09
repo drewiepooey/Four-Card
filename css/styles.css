@@ -1,0 +1,132 @@
+/* Setting up the page */
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+/* Headings and top paragraph */
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.heading-paragraph {
+  max-width: 50ch;
+  margin: 1rem auto 5rem auto;
+}
+
+/* The card styling. It is used 4 times so I put it in a single class */
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  text-align: left;
+  max-width: 350px;
+  height: 280px;
+  padding: 2rem;
+  margin: 2rem auto;
+
+  border-top: solid 3px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Only the colours were left to be added as a unique style */
+.supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.teambuilder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/* Bits & bobs */
+.supervisor-text {
+  margin-top: 1rem;
+}
+
+.icons {
+  align-self: flex-end;
+}
+
+.shadow {
+  box-shadow: -4px 7px 38px -30px #525359;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop version from 1026 pixels and up */
+@media (min-width: 1026px) {
+  /* This wrapper is the main change that gives responsiveness */
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1148px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 1.35rem;
+  }
+
+  .heading-paragraph {
+    margin-bottom: 2rem;
+  }
+}
